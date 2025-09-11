@@ -4,6 +4,11 @@ interface User {
   id: string
   email: string
   name?: string
+  username?: string
+  firstName?: string
+  lastName?: string
+  phone?: string
+  bio?: string
   role: 'USER' | 'ADMIN'
   emailVerified: boolean
   profileImage?: string
