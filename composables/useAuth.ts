@@ -276,10 +276,7 @@ export const useAuth = () => {
     }
   }
 
-  // Initialize auth on app start
-  onMounted(async () => {
-    await checkAuth()
-  })
+  // Note: Auth initialization should be handled in app.vue or layout components
 
   return {
     // State
