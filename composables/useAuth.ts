@@ -53,8 +53,8 @@ interface ApiResponse<T = any> {
 
 export const useAuth = () => {
   const config = useRuntimeConfig()
-  // Use local API endpoints for demo
-  const apiBase = '/api'
+  // Use backend API endpoints
+  const apiBase = config.public.apiBase || '/api'
 
   // Reactive state
   const authState = ref<AuthState>({

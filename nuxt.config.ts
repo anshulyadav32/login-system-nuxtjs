@@ -17,7 +17,7 @@ export default defineNuxtConfig({
   // Runtime Config
   runtimeConfig: {
     public: {
-      apiBase: process.env.NODE_ENV === 'production' ? '' : 'http://localhost:3001'
+      apiBase: process.env.NODE_ENV === 'production' ? 'https://nextjs-backend-hfyv8dqya-ay-xperts-projects.vercel.app' : 'http://localhost:3000'
     }
   },
   
